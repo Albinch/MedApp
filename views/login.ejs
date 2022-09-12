@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <h1><strong>Content de te revoir !</strong></h1>
+        <p>Toujours un plaisir, connecte toi pour accéder à tout ton contenu !</p>
+        <form method="post" action="/login">
+            <label for="email">Email</label> <br>
+            <input name="email" type="email" id="email" /> <br>
+
+            <label for="password">Mot de passe</label> <br>
+            <input name="password" type="password" id="password" /> <br>
+
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore de compte ? <a href="/register">Inscris-toi</a></p>
+    </div>
+</body>
+</html>

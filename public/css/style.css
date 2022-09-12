@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* INDEX */
+
+#container{
+    width: 25%;
+    margin: auto;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px 0px #8D8D8D;
+}
+
+#container h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#container p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#container form{
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#container form input{
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 30px;
+}
+
+#container form button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 10px 16px -12px #8D8D8D;
+    box-shadow: 0px 10px 16px -12px #8D8D8D;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #B587FF 50%, #702EFF 50%);
+    transition: background-position .2s ease-in-out,
+                color .2s ease-in-out;
+}
+
+#container form button:hover,
+#container form button:focus{
+    background-position: 0 100%;
+    color: #FFF
+}

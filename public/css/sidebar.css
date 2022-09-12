@@ -1,0 +1,59 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.fa-bars, .fa-chart-line, .fa-file, .fa-check, .fa-question, .fa-user-group{
+    color: #B587FF;
+    cursor: pointer;
+}
+
+.fa-xl.active{
+    color: white;
+}
+
+#sidebar{
+    background-color: #702EFF;
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sidebar-trigger{
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+#sidebar ul{
+    margin-top: 80px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li{
+    margin-bottom: 60px;
+}
+
+#sidebar-trigger.white{
+    color: #FFF;
+}
+
+#sidebar.hide{
+    width: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar.show{
+    width: 150px;
+    transition: all 0.2s ease-in-out;
+}

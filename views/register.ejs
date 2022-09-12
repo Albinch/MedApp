@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <h1><strong>Crée toi un compte !</strong></h1>
+    <p>Grâce à ça, tu pourras accéder à toutes nos fonctionnalités !</p>
+    <form method="post" action="/register">
+        <label for="last_name">Nom</label> <br>
+        <input name='last_name' type="text" id="last_name" /> <br>
+
+        <label for="first_name">Prénom</label> <br>
+        <input name="first_name" type="text" id="first_name" /> <br>
+
+        <label for="email_register">Email</label> <br>
+        <input name='email' type="email" id="email_register" /> <br>
+
+        <label for="password_register">Mot de passe</label> <br>
+        <input name='password' type="password" id="password_register" /> <br>
+
+        <label for="password-confirm">Confirmer le mot de passe</label> <br>
+        <input name='confirm' type="password" id="password-confirm" /> <br>
+
+        <label for="promo">Promo</label> <br>
+        <input name='promo' type="text" id="promo" /> <br>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+    <p>Déjà membre ? <a href="/login">Connecte toi !</a></p>
+  </div>
+</body>
+</html>
