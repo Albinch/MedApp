@@ -27,6 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', require('./routes/login'));
+app.use('/', require('./routes/dashboard'));
 
 const PORT = 4111;
 app.listen(PORT, console.log('Server has started at port ' + PORT));

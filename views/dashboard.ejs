@@ -22,15 +22,40 @@
         <p>Tu as passé <%= qcms.length %> QCMs. Bravo !</p>
         <button type="button" id="open-modal">Nouveau QCM</button>
     </div>
+
+    <div class="charts">
+        <div class="pie-and-subjects">
+            <div class="pie">
+                <p>Pourcentages de bonnes et mauvaises réponses :</p>
+                <div>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+            <div class="strengths-weaknesses">
+                <div class="strenghts">
+                    <p>Tes matières fortes sont :</p>
+                    <div id="strength-subjects"></div>
+                </div>
+                <div class="weaknesses">
+                    <p>Tes matières faibles sont :</p>
+                    <div id="weakness-subjects"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal hidden">
     <div class="modal-container">
         <div class="body">
             <p>Nouveau QCM</p>
-            <form>
+            <form method="post" action="/dashboard">
                 <label for="subject">Matière</label>
-                <input name="subject" id="subject" type="text"/>
+                <select name="subject" id="subject">
+                    <% for(var i = 0; i < subjects.length; i++) {%>
+                        <option value="<%= subjects[i].name %>"><%= subjects[i].name %></option>
+                    <% }%>
+                </select>
 
                 <label for="year">Année</label>
                 <input name="year" id="year" type="number"/>
@@ -47,6 +72,7 @@
     </div>
 </div>
 
-<script src="/js/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/dashboard.js" type="module"></script>
 </body>
 </html>

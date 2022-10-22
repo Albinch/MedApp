@@ -70,6 +70,34 @@
     transition: background-color 0.2s ease-in-out;
 }
 
+.charts{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie-and-subjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.charts p{
+    font-size: 20px;
+}
+
+.pie{
+    width: fit-content;
+}
+
+.pie div{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 .modal{
     background-color: rgba(0,0,0,0.4); /* Transparent dimmed overlay */
     position: fixed;
@@ -112,13 +140,14 @@
     text-align: center;
 }
 
-.modal .body form input{
+.modal .body form input, select{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid lightgray;
     height: 30px;
+    background-color: white;
 }
 
 .modal .body form button{
@@ -136,4 +165,22 @@
 .modal .body form button:hover{
     background-color: #B587FF;
     transition: background-color 0.2s ease-in-out;
+}
+
+/* STRENGTHS AND WEAKNESSES */
+
+.strengths-weaknesses{
+    display: flex;
+    flex-direction: column;
+}
+
+.weaknesses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weakness-subjects{
+    display: flex;
+    flex-direction: column;
 }

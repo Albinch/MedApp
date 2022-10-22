@@ -11,7 +11,11 @@ const QCMSchema = new mongoose.Schema({
     score: {
         type: Number,
         required: true
-    }
+    },
+    nb_questions: {
+        type: Number,
+        required: true,
+    },
 });
 
 const QCM = mongoose.model('QCM', QCMSchema);

@@ -13,6 +13,24 @@ const dashboardView = (req, res) => {
     });
 };
 
+const addQCM = (req, res) => {
+    const { subject, year, score, nb_questions } = req.body;
+    if(!subject || !year || !score || !nb_questions){
+        console.log('Remplir les champs vides.');
+    }else{
+        const newQCM = new QCM({
+            subject,
+            year,
+            score,
+            nb_questions
+        });
+        newQCM.save()
+            .then(res.redirect('/dashboard'))
+            .catch((err) => console.log(err));
+    }
+}
+
 module.exports = {
     dashboardView,
+    addQCM
 };
